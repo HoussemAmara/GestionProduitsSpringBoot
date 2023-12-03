@@ -16,20 +16,17 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
     <li class="nav-item active">
-       <form class="form-inline" method="get" action="controleur">
-        <button type="submit"class="nav-link" name="action"value="displayProduits">Produits</button>
-      </form>
-      </li>
+        <a class="nav-link" href="/produits">Produits</a>
+    </li>
       <li class="nav-item">
-      <form class="form-inline" method="get" action="controleur">
-        <button type="submit"class="nav-link" name="action"value="displayCategories">Categories</button>
-      </form>
+      <a class="nav-link" href="/categories">Categories</a>
       </li>
       
     </ul>
   </div>
 </nav>
-	<form method="get"action="controleur">
+	<form method="get"action="/controleur">
+	<input type="hidden" name="productId" value="${product.id}" />
   <div class="form-group">
     <label for="exampleInputEmail1">Product name:</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="product"name="productName">
@@ -49,7 +46,7 @@
       </c:forEach>
 	  </select>
   </div>
-  <button type="submit" class="btn btn-primary" name="action" value="ajoutProduit">Submit</button>
+  <button href="/produits" type="submit" class="btn btn-primary" name="action" value="ajoutProduit">Submit</button>
 </form>
 </body>
 </html>

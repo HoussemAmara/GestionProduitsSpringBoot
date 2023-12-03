@@ -16,20 +16,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
     <li class="nav-item active">
-       <form class="form-inline" method="get" action="controleur">
-        <button type="submit"class="nav-link" name="action"value="displayProduits">Produits</button>
-      </form>
-      </li>
+        <a class="nav-link" href="/produits">Produits</a>
+    </li>
       <li class="nav-item">
-      <form class="form-inline" method="get" action="controleur">
-        <button type="submit"class="nav-link" name="action"value="displayCategories">Categories</button>
-      </form>
+      <a class="nav-link" href="/categories">Categories</a>
       </li>
       
     </ul>
   </div>
 </nav>
-	<form method="get"action="controleur">
+	<form method="get"action="/edit">
 	<input type="hidden" name="productId" value="${product.id}" />
   <div class="form-group">
     <label for="exampleInputEmail1">Product name:</label>

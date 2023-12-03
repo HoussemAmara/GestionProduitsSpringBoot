@@ -23,5 +23,11 @@ public class Produit {
 	private double prix;
 	private int quantite;
 	@ManyToOne
-	private Categorie categorie;	
+	private Categorie categorie;
+	public Produit(String nom, double prix, int quantite, Categorie categorie) {
+        this.nom = nom;
+        this.prix = prix;
+        this.quantite = quantite;
+        this.categorie = categorie;
+    }
 }

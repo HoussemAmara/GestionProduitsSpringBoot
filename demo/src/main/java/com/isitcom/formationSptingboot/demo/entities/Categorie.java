@@ -22,6 +22,14 @@ public class Categorie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nom;
-    @OneToMany(mappedBy = "categorie", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "categorie")
     private List<Produit> liste;
+	public Categorie(String nom) {
+		this.nom = nom;
+	}
+	public Categorie(int id,String nom) {
+		this.id = id;
+		this.nom = nom;
+	}
+    
 }

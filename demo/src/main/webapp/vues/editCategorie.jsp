@@ -16,14 +16,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
     <li class="nav-item active">
-       <form class="form-inline" method="get" action="controleur">
-        <button type="submit"class="nav-link" name="action"value="displayProduits">Produits</button>
-      </form>
-      </li>
+        <a class="nav-link" href="/produits">Produits</a>
+    </li>
       <li class="nav-item">
-      <form class="form-inline" method="get" action="controleur">
-        <button type="submit"class="nav-link" name="action"value="displayCategories">Categories</button>
-      </form>
+      <a class="nav-link" href="/categories">Categories</a>
       </li>
       
     </ul>
